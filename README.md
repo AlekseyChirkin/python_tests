@@ -1,2 +1,2 @@
 # TryingPython
-Один общий курс + те же задачи, что и на JavaScript
+Один курс с основами Python + те же задачи, что и на JavaScript
