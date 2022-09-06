@@ -5,16 +5,16 @@ secondNum = input("Введите второе число: ")
 thirdNum = input("Введите третье число: ")
 
 summa = 0
-if (int(firstNum) % 5) == 0 :
+if (int(firstNum) % 5) == 0:
     summa += int(firstNum)
 
-if (int(secondNum) % 5) == 0 :
+if (int(secondNum) % 5) == 0:
     summa += int(secondNum)
 
-if (int(thirdNum) % 5) == 0 :
+if (int(thirdNum) % 5) == 0:
     summa += int(thirdNum)
 
 if summa != 0:
     print("Сумма чисел, делящихся нацело на 5, равна: ", summa)
-else :
+else:
     print("error!")
