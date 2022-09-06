@@ -5,13 +5,12 @@ fileName = 'txt/textForTask_5.txt'
 capitalizedEveryWordText = ''
 allNumsAsWordsText = ''
 
-with open(fileName) as file:
+with open(fileName, encoding='utf8') as file:
     lines = file.readlines()
 
 lines = str(lines).split(' ')
 for word in lines:
     capitalizedEveryWordText += word.capitalize() + ' '
-capitalizedEveryWordText.replace('  ', ' ')
 
 for char in capitalizedEveryWordText:
     if char == '0':
@@ -37,5 +36,7 @@ for char in capitalizedEveryWordText:
 
     allNumsAsWordsText += char
 
-allNumsAsWordsText.replace('  ', ' ')
+for i in range(0, 3):
+    allNumsAsWordsText.replace('  ', ' ')
+
 print(allNumsAsWordsText)
