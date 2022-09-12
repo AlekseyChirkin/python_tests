@@ -1,21 +1,27 @@
 def isValid(s: str) -> bool:
-    brackets = {
-        '(': ')',
-        '[': ']',
-        '{': '}'
-    }
     if len(s) % 2 != 0:
         return False
 
-    for i in range(0, len(s), 2):
-        if s[i] not in brackets or s[i+1] != brackets[s[i]]:
-            return False
-    return True
+    brackets = {
+        ')': '(',
+        ']': '[',
+        '}': '{'
+    }
 
+    stack = []
+    for ch in s:
+        if ch in brackets.values():
+            stack.append(ch)
+        elif ch in brackets.keys():
+            if stack == [] or brackets[ch] != stack.pop():
+                return False
+
+    return True
 
 # data = "()[]{}"
 # data = "()}{"
 # data = "(]"
-data = "(){{}[]]"
+# data = "(){{}[]]"
+# data = "{[]}" # True
 
 print(isValid(data))
