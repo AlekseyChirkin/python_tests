@@ -6,9 +6,14 @@ def isValid(s: str) -> bool:
     }
     for i in range(len(s)):
         if s[i] in brackets.keys():
-            if s[i] != brackets[s[i+1]]:
+            if s[i+1] != brackets[s[i]]:
                 return False
+    return True
 
 
-data = "()[]{}"
-isValid(data)
+# data = "()[]{}"
+# data = "()"
+# data = "(]"
+data = "()[]{"
+
+print(isValid(data))
