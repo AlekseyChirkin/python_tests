@@ -26,9 +26,6 @@ class ListNode:
 
 
 def mergeTwoLists(list1: Optional[ListNode], list2: Optional[ListNode]) -> Optional[ListNode]:
-    list2 += list1
-
-    list2 = sorted(list2, key=list2.val)
 
     pass
 
