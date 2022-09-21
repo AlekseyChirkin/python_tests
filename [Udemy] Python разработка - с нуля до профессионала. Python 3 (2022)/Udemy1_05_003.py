@@ -4,8 +4,8 @@ def ten_percent_of_product(x, y, z):
 
 def ten_percent_of_product_with_args(percent, *args):
     p = 1
-    for i in args:
-        p = p * i
+    for i1 in args:
+        p = p * i1
     return p / 100 * percent
 
 
