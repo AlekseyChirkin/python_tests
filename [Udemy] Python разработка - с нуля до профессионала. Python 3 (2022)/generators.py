@@ -1,4 +1,3 @@
-
 def count_down(from_num):
     from_num = from_num
     while from_num >= 0:
@@ -37,4 +36,3 @@ print(ddd.__next__())
 print(next(ddd))
 for d in ddd:
     print(d, end=' ')
-
